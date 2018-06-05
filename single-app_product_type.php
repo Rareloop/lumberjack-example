@@ -7,6 +7,7 @@
 namespace App;
 
 use Timber\Timber;
+use App\ViewModels\Products;
 use Rareloop\Lumberjack\Post;
 use App\PostTypes\ProductType;
 use Rareloop\Lumberjack\Http\Responses\TimberResponse;
@@ -25,6 +26,6 @@ class SingleAppProductTypeController
         // Create a products view model for this product type
         $context['products'] = Products::forProductType($productType);
 
-        return new TimberResponse('templates/generic-page.twig', $context);
+        return new TimberResponse('templates/products-page.twig', $context);
     }
 }

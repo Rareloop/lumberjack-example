@@ -31,6 +31,6 @@ class PageController
         // Create a products view model with all products
         $context['products'] = new Products(Product::all());
 
-        return new TimberResponse('templates/generic-page.twig', $context);
+        return new TimberResponse('templates/products-page.twig', $context);
     }
 }

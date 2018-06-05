@@ -1,0 +1,11 @@
+{% extends "base.twig" %}
+
+{% block content %}
+    <main>
+        {% for product in products %}
+            <img src="{{ product.image }}" />
+            <a href="{{ product.permalink }}"><h1>{{ product.title }}</h1></a>
+            <h3>Price: {{ product.price }}</h3>
+        {% endfor %}
+    </main>
+{% endblock %}

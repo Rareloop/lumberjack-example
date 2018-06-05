@@ -21,6 +21,6 @@ class SingleController
         $context['title'] = $post->title;
         $context['content'] = $post->content;
 
-        return new TimberResponse('templates/generic-page.twig', $context);
+        return new TimberResponse('templates/product-page.twig', $context);
     }
 }

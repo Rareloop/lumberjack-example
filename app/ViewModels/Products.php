@@ -17,6 +17,7 @@ class Products extends ViewModel
                 'image' => $product->photo()->src('product-photo'),
                 'title' => $product->title,
                 'price' => $product->price(),
+                'permalink' => $product->link(),
             ];
         })->toArray();
     }

@@ -40,9 +40,8 @@ class ProductType extends Post
 
     public function products()
     {
-        // matches exactly "123", not just 123. This prevents a match for "1234"
-        return Product::whereMeta('product_type', '"' . $this->id . '"', 'LIKE')
-            ->whereStatus('publish')
+        return Product::whereStatus('publish')
+            ->whereMeta('product_type', $this->id, '=')
             ->orderByMeta('price', 'desc', 'numeric')
             ->limit(16)
             ->get();
