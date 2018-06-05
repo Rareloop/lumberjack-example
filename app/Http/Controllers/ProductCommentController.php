@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Zend\Diactoros\ServerRequest;
 use Zend\Diactoros\Response\JsonResponse;
+use App\Exceptions\CannotSaveAnEmptyComment;
 
 class ProductCommentController
 {
