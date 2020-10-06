@@ -24,6 +24,9 @@ return [
         Rareloop\Lumberjack\Providers\LogServiceProvider::class,
         Rareloop\Lumberjack\Providers\ThemeSupportServiceProvider::class,
         Rareloop\Lumberjack\Providers\LogServiceProvider::class,
+        Rareloop\Lumberjack\Providers\QueryBuilderServiceProvider::class,
+        Rareloop\Lumberjack\Providers\SessionServiceProvider::class,
+        Rareloop\Lumberjack\Providers\EncryptionServiceProvider::class,
 
         App\Providers\OptionPagesProvider::class,
     ],

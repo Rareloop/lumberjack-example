@@ -12,12 +12,13 @@
 namespace App;
 
 use Timber\Timber;
+use App\Http\Controllers\Controller;
 use App\PostTypes\Product;
 use App\ViewModels\Products;
 use Rareloop\Lumberjack\Page;
 use Rareloop\Lumberjack\Http\Responses\TimberResponse;
 
-class PageController
+class PageController extends Controller
 {
     public function handle()
     {

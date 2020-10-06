@@ -2,7 +2,7 @@
 
 namespace App\PostTypes;
 
-use Rareloop\Lumberjack\QueryBuilder\Post;
+use Rareloop\Lumberjack\Post;
 use Timber\Image as TimberImage;
 
 class Product extends Post

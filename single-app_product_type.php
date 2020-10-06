@@ -7,12 +7,13 @@
 namespace App;
 
 use Timber\Timber;
+use App\Http\Controllers\Controller;
 use App\ViewModels\Products;
 use Rareloop\Lumberjack\Post;
 use App\PostTypes\ProductType;
 use Rareloop\Lumberjack\Http\Responses\TimberResponse;
 
-class SingleAppProductTypeController
+class SingleAppProductTypeController extends Controller
 {
     public function handle()
     {

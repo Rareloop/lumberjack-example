@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use Zend\Diactoros\ServerRequest;
+use Rareloop\Lumberjack\Http\ServerRequest;
 use Zend\Diactoros\Response\JsonResponse;
 use App\Exceptions\CannotSaveAnEmptyComment;
 
